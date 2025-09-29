@@ -14,6 +14,13 @@ var log []Command
 const canvasWidth = 400
 const canvasHeight = 400
 
+// Exportée (accessible à main.go)
+func play() {
+	if len(log) > 0 {
+		generateHTML()
+	}
+}
+
 // -------------------------------------------------
 // Fonctions utilisables dans le code Go
 // -------------------------------------------------
